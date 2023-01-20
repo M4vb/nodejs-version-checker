@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
+
 # Get full code of the official page of node js and use BeautifulSoup to make web scraping
 full_html = requests.get("https://nodejs.org/en/").text
 html_parser = BeautifulSoup(full_html, "html.parser")
